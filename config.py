@@ -1,2 +1,3 @@
-TOKEN = "8169353598:AAF3pa5N0hItD7Yt9UjBTlOul0BeKMZOMDA"
-ADMIN_ID = 8570854546  # o'z Telegram ID'ing
+import os
+TOKEN = os.getenv("AAF3pa5N0hItD7Yt9UjBTlOul0BeKMZOMDA")
+ADMIN_ID = int(os.getenv("8570854546"))
