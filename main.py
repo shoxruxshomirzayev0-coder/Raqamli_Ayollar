@@ -4,7 +4,7 @@ from telegram.ext import *
 import config
 import db
 
-app = ApplicationBuilder().token(config.TOKEN).build()
+app = ApplicationBuilder().token(config.TOKEN).updater(None).build()
 
 # YouTube info
 def get_video_info(url):
