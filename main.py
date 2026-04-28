@@ -4,8 +4,8 @@ from telegram.ext import *
 import config
 import db
 
-app = ApplicationBuilder().token(config.TOKEN).updater(None).build()
-
+# config.TOKEN orqali oddiy holatda yarating
+app = ApplicationBuilder().token(config.TOKEN).build()
 # YouTube info
 def get_video_info(url):
     try:
